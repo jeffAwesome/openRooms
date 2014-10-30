@@ -7,13 +7,12 @@ gem 'pg'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
+gem 'zurb-foundation'
 
 # upload
-gem 'carrierwave'
-gem 'rmagick'
+gem "paperclip", "~> 4.2"
 gem 'fog'
-gem 'carrierwave_direct'
-gem 'sidekiq'
+gem 'aws-sdk'
 
 # Build
 gem 'figaro'

@@ -1,0 +1,19 @@
+
+<ul>
+  <% @rooms.each do |room| %>
+  <li>
+    <%= image_tag room.room_image %>
+    <%= room.title %>
+  </li>
+  <% end %>
+  </ul>
+</ul>
+
+
+
+<%= link_to 'New Room', new_room_path %>
+
+
+
+
+
