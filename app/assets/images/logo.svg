@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="70px" height="138px" viewBox="0 0 70 138" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>OpenRooms Door</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="OpenRooms-Door" sketch:type="MSLayerGroup">
+            <rect id="openrooms-door" stroke="#8C45B0" stroke-width="4.5" sketch:type="MSShapeGroup" x="0" y="9" width="70" height="120" rx="8"></rect>
+            <path d="M51,129.665072 L51,8.33509727 C51,3.17951215 48.3919634,-0.488535643 45.1744993,0.142339668 L5.82550067,7.8578296 C2.60816549,8.48867964 0,12.5914463 0,17.001524 L0,120.998645 C0,125.417718 2.60803658,129.511464 5.82550067,130.14234 L45.1744993,137.85783 C48.3918345,138.48868 51,134.810163 51,129.665072 Z M44.4428571,70.1453227 C44.4428571,66.3503375 42.4857019,63.3058738 40.0714286,63.3453227 C37.6571552,63.3847716 35.7,66.4164435 35.7,70.1167513 C35.7,73.8170591 37.6571552,76.8615228 40.0714286,76.9167513 C42.4857019,76.9719798 44.4428571,73.9403079 44.4428571,70.1453227 Z" id="Rectangle-1" fill="#8C45B0" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
