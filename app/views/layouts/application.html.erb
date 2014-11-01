@@ -24,8 +24,9 @@
   <body>
 
     <%= render 'shared/signed_in_header' %>
-
-    <%= yield %>
+    <div class="contentContainer wrapper">
+      <%= yield %>
+    </div>
 
 
     <%= javascript_include_tag "application" %>

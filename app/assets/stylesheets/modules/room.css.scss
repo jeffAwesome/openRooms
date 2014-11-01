@@ -1,0 +1,39 @@
+@import "globals/all";
+/* Room save info */
+
+ul.room-listing {
+  li:hover {
+    ul.room-save {
+      opacity: 1;
+    }
+  }
+}
+
+ul.room-save {
+  opacity: 0;
+  width: 108px;
+  margin: 0 auto;
+  transition: opacity 500ms ease 0s;
+  li {
+    max-height: 25px;
+    opacity: 0.5;
+    transition: all 500ms ease 0s;
+    padding: 0;
+    margin: 10px 5px;
+    &:hover {
+      opacity: 1;
+    }
+
+    a {
+      border: 1px solid rgba(140, 69, 176, 0.24);
+      border-radius: 4px;
+      display: block;
+      padding: 6px 12px;
+      font-size: $h2;
+      color: $basecolor;
+      .fa {
+        display: block;
+      }
+    }
+  }
+}

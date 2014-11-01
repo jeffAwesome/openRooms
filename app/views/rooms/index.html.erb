@@ -1,9 +1,18 @@
-
-<ul>
+<ul class="room-listing">
   <% @rooms.each do |room| %>
   <li>
     <%= image_tag room.room_image %>
     <%= room.title %>
+
+
+    <ul class="room-save">
+      <li class="like-room">
+        <a href="#"><i class="fa fa-heart"></i></a>
+      </li>
+      <li class="save-room">
+        <a href="#"><i class="fa fa-download"></i></a>
+      </li>
+    </ul>
   </li>
   <% end %>
   </ul>

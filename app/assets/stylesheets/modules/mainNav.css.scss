@@ -1,0 +1,45 @@
+@import "globals/all";
+
+
+.site-header {
+    left: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: fixed;
+    right: 0;
+    text-align: left;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+  background-image: image-url("logo.svg");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 15px 30px;
+  font-size: $h2;
+  padding: 0 0 0 20px;
+  a {
+    color: $basecolor;
+    text-decoration: none;
+    font-weight: $normWeight;
+  }
+}
+
+.options-nav {
+  ul {
+    margin: 0;
+    padding: 10px 0 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 30px 0 0;
+    font-size: $h5;
+    .fa {
+      font-size: $h2;
+    }
+    a {
+      color: $greyColor;
+    }
+  }
+}
