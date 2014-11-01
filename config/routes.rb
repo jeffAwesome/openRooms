@@ -1,5 +1,9 @@
 OpenRooms::Application.routes.draw do
+  get '/rooms/popular', to: 'rooms#popular'
+
+  get '/rooms/recent', to: 'rooms#recent'
   resources :rooms
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

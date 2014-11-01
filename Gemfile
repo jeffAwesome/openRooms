@@ -27,6 +27,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 
+group :development do
+  gem 'guard', '>= 2.2.2',       :require => false
+  gem 'guard-livereload',        :require => false
+  gem 'rack-livereload'
+  gem 'rb-fsevent',              :require => false
+end
+
 
 
 group :doc do

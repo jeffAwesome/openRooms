@@ -1,5 +1,5 @@
 class RoomsController < ApplicationController
-  before_action :set_room, only: [:show, :edit, :update, :destroy]
+  before_action :set_room, only: [:edit, :update, :destroy]
 
   # GET /rooms
   # GET /rooms.json
@@ -7,10 +7,14 @@ class RoomsController < ApplicationController
     @rooms = Room.all
   end
 
-  # GET /rooms/1
-  # GET /rooms/1.json
-  def show
+  def popular
+    @rooms = Room.all
   end
+
+  def recent
+    @rooms = Room.order('created_at desc')
+  end
+
 
   # GET /rooms/new
   def new

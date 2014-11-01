@@ -1,4 +1,10 @@
 @import "globals/all";
+
+h4.room-title {
+  font-size: $h4;
+  font-weight: $normWeight;
+}
+
 /* Room save info */
 
 ul.room-listing {
