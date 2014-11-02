@@ -9,15 +9,26 @@
 
     <nav class="options-nav">
       <ul>
-        <li>
+        <li class="search">
           <a href="#">
             <i class="fa fa-search"></i>
           </a>
+         <ul class="full">
+           <li>
+             <h3>Hello World</h3>
+           </li>
+         </ul>
         </li>
-        <li>
+        <li class="add-room">
           <a href="#">
             <i class="fa fa-plus"></i>
           </a>
+          <ul class="full">
+           <li>
+             <%= render :partial => '/rooms/form' %>
+           </li>
+         </ul>
+
         </li>
 
         <li>

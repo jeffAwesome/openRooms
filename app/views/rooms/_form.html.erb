@@ -11,20 +11,10 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </div>
-
-  <div class="field">
     <%= f.file_field :room_image %>
-  </div>
 
+    <%= f.text_field :title, :placeholder => "Room Title Here" %>
 
-
-
-
-  <div class="actions">
     <%= f.submit %>
-  </div>
+
 <% end %>

@@ -32,9 +32,24 @@
     padding: 10px 0 0;
   }
   li {
-    display: inline-block;
+    float: left;
     margin: 0 30px 0 0;
     font-size: $h5;
+    &.active {
+      ul {
+        display: block;
+      }
+    }
+    ul {
+      width: 100%;
+      max-width: 1200px;
+      position: absolute;
+      display: none;
+      li {
+        width: 95%;
+        box-sizing: border-box;
+      }
+    }
     .fa {
       font-size: $h2;
     }
@@ -43,3 +58,55 @@
     }
   }
 }
+
+#new_room {
+  background: #eee;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+
+#room_title {
+  width: 50%;
+  float: left;
+  background: transparent;
+  border: 0;
+  box-shadow: 0 0 0 0;
+  color: #8c45b0;
+  font-size: $h2;
+  &:hover{
+    border: 0;
+    outline: 0;
+  }
+  &:active {
+    border: 0;
+    outline: 0;
+  }
+}
+
+#room_room_image,
+input[type='submit'] {
+    margin: 5px 5px 5px 15px;
+    float: left;
+    width: 20%;
+    background-color: white;
+    border-color: rgba(140, 69, 176, 0.24);
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    color: #8c45b0;
+    display: inline-block;
+    padding: 9px 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 500ms ease 0s;
+}
+
+
+input[type='submit'] {
+  width: 10%;
+  float: right;
+  margin-right: 15px;
+}
+
