@@ -30,6 +30,7 @@
   ul {
     margin: 0;
     padding: 10px 0 0;
+    position: relative;
   }
   li {
     float: left;
@@ -45,6 +46,7 @@
       max-width: 1200px;
       position: absolute;
       display: none;
+      left: 0;
       li {
         width: 95%;
         box-sizing: border-box;
@@ -110,3 +112,18 @@ input[type='submit'] {
   margin-right: 15px;
 }
 
+#search-form input{
+  background-color: whitesmoke;
+  margin-bottom: 0;
+  width: 100%;
+  border: 0;
+ border-left-color: #8c45b0;
+    border-left-style: solid;
+    border-left-width: 4px;
+    color: #8c45b0;
+    display: inline-block;
+    float: left;
+    font-size: 22px;
+    padding: 10px;
+   box-shadow: 0 0 0;
+}
