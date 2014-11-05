@@ -1,0 +1,62 @@
+
+
+#my-modal {
+  background-color: #8c45b0;
+  color: white;
+}
+
+
+#add-rooms-container {
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 360px;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+}
+
+#room_title {
+  border: 0;
+  border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 45px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    background: transparent;
+    color: #fff !important;
+    text-align: center;
+    box-shadow: 0 0 0;
+}
+
+#room_room_image {
+ background-color: transparent;
+    border: 2px dashed white;
+    border-radius: 6px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 15px;
+}
+
+
+#my-modal input[type="submit"] {
+   background-color: white;
+    border-color: rgba(140, 69, 176, 0.24);
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    color: #8c45b0;
+    display: inline-block;
+    margin-top: 45px;
+    padding: 9px 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 500ms ease 0s;
+    width: 100%;
+}

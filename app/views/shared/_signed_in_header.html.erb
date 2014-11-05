@@ -20,15 +20,9 @@
          </ul>
         </li>
         <li class="add-room">
-          <a href="#">
+          <a data-reveal-id="my-modal" href="#">
             <i class="fa fa-plus"></i>
           </a>
-          <ul class="full">
-           <li>
-             <%= render :partial => '/rooms/form' %>
-           </li>
-         </ul>
-
         </li>
 
         <li>
@@ -43,4 +37,20 @@
     </nav>
 
 </div>
+
+<div id="my-modal" class="reveal-modal full-modal">
+  <div class="row" id="add-rooms-container">
+    <div class="twelve columns" style="text-align: center;">
+      <%= render :partial => '/rooms/form' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns" style="text-align: center;">
+      <a class="close-reveal-modal close-full-modal">×</a>
+    </div>
+  </div>
+</div>
+
+
 </header>

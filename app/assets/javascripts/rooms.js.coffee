@@ -3,6 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 #
 (($) ->
+
   $(".options-nav li a").click ->
     console.log "oh its clicked alirght"
     theParent = $(this).parent("li")
@@ -10,4 +11,11 @@
       theParent.removeClass("active")
     else
       theParent.addClass("active")
+
+  $("#my-modal").bind "reveal:opened", ->
+    timerBox = $("#my-modal")
+    timerBox.css "width", $("body").width()
+    return
+
+
 ) jQuery
