@@ -9,7 +9,6 @@ OpenRooms::Application.configure do
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   }
-  config.assets.precompile = ['*.js', '*.css', '*.css.erb']
 
 
   # Code is not reloaded between requests.
