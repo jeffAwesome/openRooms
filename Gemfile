@@ -18,6 +18,14 @@ gem 'aws-sdk'
 # Build
 gem 'figaro'
 
+#authenticate
+gem 'omniauth'
+gem 'omniauth-facebook'
+
+#social
+gem 'socialization', '~> 1.1.0'
+
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'

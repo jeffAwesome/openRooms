@@ -1,8 +1,22 @@
 OpenRooms::Application.routes.draw do
+  #authentication through facebook
+  get 'auth/:provider/callback', to: 'sessions#create'
+  get 'auth/failure', to: redirect('/')
+  get 'signout', to: 'sessions#destroy', as: 'signout'
+
   get '/rooms/popular', to: 'rooms#popular'
 
   get '/rooms/recent', to: 'rooms#recent'
-  resources :rooms
+
+  resources :rooms do
+    #post 'like',   to: 'socializations#like'
+    #post 'unlike', to: 'socializations#unlike'
+    #post 'togglelike', to: 'socializations#toggle_like'
+    #get 'togglelike', to: 'socializations#toggle_like'
+    post :toggle_like
+  end
+
+  root 'rooms#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

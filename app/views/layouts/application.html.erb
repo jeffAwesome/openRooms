@@ -26,6 +26,9 @@
     <%= render 'shared/signed_in_header' %>
 
     <div class="contentContainer wrapper">
+      <% if notice %>
+      <p id="notice"><%= notice %></p>
+      <% end %>
       <%= yield %>
     </div>
 

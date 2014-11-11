@@ -21,6 +21,12 @@ class RoomsController < ApplicationController
     @rooms = Room.order('created_at desc')
   end
 
+  def toggle_like
+    @room = Room.find(params[:room_id])
+    current_user.toggle_like!(@room)
+    redirect_to :root, notice: "Your action regarding #{@room.title} has been saved."
+  end
+
 
   # GET /rooms/new
   def new
@@ -83,6 +89,6 @@ class RoomsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def room_params
-      params.require(:room).permit(:title, :image, :room_image)
+      params.require(:room).permit(:title, :image, :room_image, :user_id)
     end
 end

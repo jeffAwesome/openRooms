@@ -6,8 +6,25 @@
 
 
     <ul class="room-save">
-      <li class="like-room">
-        <a href="#"><i class="fa fa-heart"></i></a>
+     <% if current_user %>
+       <% if current_user.likes?(room) %>
+          <li class="like-room active">
+            <%= link_to room_toggle_like_path(room), method: :post do %>
+              <i class="fa fa-heart"></i>
+          </li>
+          <% end %>
+        <% else %>
+           <li class="like-room">
+            <%= link_to room_toggle_like_path(room), method: :post do %>
+              <i class="fa fa-heart"></i>
+            <% end %>
+           </li>
+        <% end %>
+      <% else %>
+        <li class="like-room">
+          <a href="#" disabled="disabled"><i class="fa fa-heart"></i></a>
+        </li>
+      <% end %>
       </li>
       <li class="save-room">
         <a target="_blank" href="<%=room.room_image %>" download="<%= room.room_image %>"><i class="fa fa-download"></i></a>
