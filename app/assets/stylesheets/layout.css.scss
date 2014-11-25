@@ -9,17 +9,33 @@
   margin: 0;
   padding: 0;
 
+  > li {
+    width: 15%;
+    height: 219px;
+
+    @media screen and (max-width: $break-large) {
+      width: 30%;
+    }
+
+    @media screen and (max-width: $break-medium) {
+      width: 48%;
+    }
+
+    @media screen and (max-width: $break-small) {
+      width: 95%;
+    }
+
+
+  }
+
   li {
     float: left;
     margin: 10px;
     font-size: $h4;
     text-align: center;
-    height: 219px;
   }
 
   img {
-    width: 170px;
-    height: 170px;
     display: block;
   }
 }
